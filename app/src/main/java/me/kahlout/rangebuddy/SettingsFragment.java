@@ -39,9 +39,9 @@ public class SettingsFragment extends Fragment {
         // Create instance of TinyDB
         tinydb = new TinyDB(getContext());
 
-        mListView = (ListView) view.findViewById(R.id.SettingListView);
+        mListView = view.findViewById(R.id.SettingListView);
         String[] myKeys = getResources().getStringArray(R.array.listviewSettings);
-        mListView.setAdapter(new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, myKeys));
+        mListView.setAdapter(new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, myKeys));
 
 
         return view;

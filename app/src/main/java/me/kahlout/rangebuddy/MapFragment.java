@@ -96,7 +96,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     private int mUnits;
 
     //Premium User Flag
-    private boolean mPremium;
+    boolean mPremium;
 
     // Do we have location?
     boolean mLocationFirstUpdate = false;
@@ -276,8 +276,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                         .width(12)
                         .color(Color.RED));
 
-                String S = "String";
-
                 mEndMarker = mGoogleMap.addMarker(new MarkerOptions()
                         .position(new LatLng(clickCoords.latitude, clickCoords.longitude))
                         .icon(BitmapDescriptorFactory.fromBitmap(MarkerIcon))
@@ -437,8 +435,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                         AlertDialog alert = builder.create();
                         alert.show();
 
-
                         break;
+
+
                     default:
                         break;
                 }

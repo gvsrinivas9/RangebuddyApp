@@ -106,12 +106,12 @@ public class PremiumFragment extends Fragment implements PurchasesUpdatedListene
 
     }
 
-    private void queryPrefPurchases() {
-        if (mPremium) {
-            mBuyButton.setText(getResources().getString(R.string.pref_ad_removal_purchased));
-            mBuyButton.setEnabled(false);
-        }
-    }
+//    private void queryPrefPurchases() {
+//        if (mPremium) {
+//            mBuyButton.setText(getResources().getString(R.string.pref_ad_removal_purchased));
+//            mBuyButton.setEnabled(false);
+//        }
+//    }
 
     //Used if purchases ever need to be queried in the future
     private void queryPurchases() {
